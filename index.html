@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100d20">
+<title>MediaSave Pro — Save Your Authorized Media</title>
+<meta name="description" content="MediaSave Pro is a free, mobile-friendly tool for downloading direct media files you own or are authorized to save.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/mediasave-pro/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-icon">↓</span><span>MediaSave <b>Pro</b></span></a>
+  <nav><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">☼</button></nav>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow"><span class="pulse"></span> SIMPLE • PRIVATE • MOBILE FRIENDLY</div>
+    <h1>Your media.<br><span>Saved simply.</span></h1>
+    <p class="lead">Download direct media-file links that you own or have permission to save. No account required.</p>
+  </section>
+  <section class="download-card" aria-labelledby="download-title">
+    <div class="card-heading"><div><div class="eyebrow">DOWNLOAD TOOL</div><h2 id="download-title">Paste a media link</h2></div><span class="round-icon">↧</span></div>
+    <label for="mediaUrl">Direct media file URL</label>
+    <input id="mediaUrl" type="url" placeholder="https://example.com/video.mp4" autocomplete="url" inputmode="url">
+    <label for="fileName">Save as (optional)</label>
+    <input id="fileName" type="text" placeholder="my-video.mp4">
+    <button class="primary-btn" id="downloadBtn"><span>↓</span> Download file</button>
+    <div id="status" class="status" role="status" aria-live="polite">Paste a direct file URL to get started.</div>
+    <p class="small">Supported when allowed by the host: direct MP4, WebM, MP3 and other file URLs. A social-media post URL is not a direct media-file URL.</p>
+  </section>
+  <section class="feature-grid">
+    <article><span>⚡</span><h3>Easy to use</h3><p>Paste a permitted direct link and start a download.</p></article>
+    <article><span>📱</span><h3>Mobile ready</h3><p>Responsive layout for phones, tablets and desktops.</p></article>
+    <article><span>🛡</span><h3>Privacy minded</h3><p>Download history stays in this browser on your device.</p></article>
+  </section>
+  <section class="history-card">
+    <div class="history-head"><div><div class="eyebrow">ON THIS DEVICE</div><h2>Recent downloads</h2></div><button class="text-btn" id="clearHistory">Clear history</button></div>
+    <div id="historyList" class="history-list"><p class="small">No downloads recorded yet.</p></div>
+  </section>
+  <aside class="notice"><b>Important use notice</b><p>MediaSave Pro does not extract videos from Instagram, Facebook or YouTube pages, bypass DRM, remove access controls, or circumvent platform restrictions. Use official download/export features where available. Only download content you own or are authorized to save.</p></aside>
+</main>
+<footer><span>© <span id="year"></span> MediaSave Pro</span><span><a href="privacy.html">Privacy Policy</a> · <a href="contact.html">Contact</a></span></footer>
+<script src="assets/app.js"></script>
+</body></html>
